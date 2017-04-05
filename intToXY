@@ -1,0 +1,25 @@
+package world;
+
+public class intToXY {
+
+	public int[] transform(int in) {
+		
+		int input = in;
+		int count = 1;
+		int[] output = {0, 0};
+		
+		while(input >= 0) {
+			
+			input = input - 60;
+			count++;
+			
+		}
+		
+		output[0] = count * 60;
+		output[1] = (input + 60) * 60;
+		
+		System.out.println(output);
+		return output;
+	}
+	
+}
